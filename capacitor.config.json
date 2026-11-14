@@ -1,0 +1,6 @@
+{
+  "appId": "com.mymed.personal",
+  "appName": "MyMed",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}
