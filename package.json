@@ -4,9 +4,9 @@
   "description": "Personal Medicine Manager",
   "private": true,
   "scripts": {
-    "build": "echo Web app ready",
-    "android:add": "npx cap add android",
-    "android:sync": "npx cap sync android",
+    "build": "rm -rf www && mkdir -p www && cp index.html style.css script.js www/",
+    "android:add": "npm run build && npx cap add android",
+    "android:sync": "npm run build && npx cap sync android",
     "android:open": "npx cap open android"
   },
   "dependencies": {
