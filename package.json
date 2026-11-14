@@ -4,7 +4,7 @@
   "description": "Personal Medicine Manager",
   "private": true,
   "scripts": {
-    "build": "rm -rf www && mkdir -p www && cp index.html style.css script.js www/",
+    "build": "test -f www/index.html && test -f www/style.css && test -f www/script.js && echo '✅ Web assets verified in www/'",
     "android:add": "npm run build && npx cap add android",
     "android:sync": "npm run build && npx cap sync android",
     "android:open": "npx cap open android"
